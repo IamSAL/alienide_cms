@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_infos",
+  "info": {
+    "singularName": "site-info",
+    "pluralName": "site-infos",
+    "displayName": "Site info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site_name": {
+      "type": "string",
+      "required": true,
+      "default": "My website"
+    },
+    "site_title": {
+      "type": "string"
+    },
+    "meta_keywords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text.keyword"
+    },
+    "site_logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.logos",
+      "required": true
+    },
+    "contact_info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.contact-info",
+      "required": true
+    }
+  }
+}

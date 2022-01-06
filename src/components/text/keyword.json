@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_keywords",
+  "info": {
+    "displayName": "keyword",
+    "icon": "sort-alpha-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "keyword": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    }
+  }
+}

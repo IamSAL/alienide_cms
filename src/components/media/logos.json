@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_media_logos",
+  "info": {
+    "displayName": "logos",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "normal": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "light": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "dark": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "loader": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

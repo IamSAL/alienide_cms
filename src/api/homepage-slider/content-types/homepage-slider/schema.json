@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_sliders",
+  "info": {
+    "singularName": "homepage-slider",
+    "pluralName": "homepage-sliders",
+    "displayName": "Homepage Slider"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.slider",
+      "required": true
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_elements_contact_infos",
+  "info": {
+    "displayName": "Contact info",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.social-info"
+    }
+  }
+}

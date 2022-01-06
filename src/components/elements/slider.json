@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_elements_sliders",
+  "info": {
+    "displayName": "Slider",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "btnText": {
+      "type": "string",
+      "default": "About us",
+      "required": false
+    },
+    "btnLink": {
+      "type": "string",
+      "default": "/about"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
