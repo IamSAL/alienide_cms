@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_elements_menu_items",
+  "info": {
+    "displayName": "Menu Item",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "page",
+        "custom_link"
+      ],
+      "required": true,
+      "default": "page"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "custom_link": {
+      "type": "string",
+      "unique": false
+    },
+    "hover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "status": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

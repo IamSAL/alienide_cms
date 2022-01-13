@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_mixed_seos",
+  "info": {
+    "displayName": "SEO",
+    "icon": "search"
+  },
+  "options": {},
+  "attributes": {
+    "meta_title": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "meta_tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text.keyword"
+    },
+    "share_thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

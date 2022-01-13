@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_menu_rights",
+  "info": {
+    "singularName": "footer-menu-right",
+    "pluralName": "footer-menu-rights",
+    "displayName": "Footer menu-right",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.menu-item",
+      "required": false
+    }
+  }
+}

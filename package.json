@@ -12,12 +12,12 @@
     "generate": "strapi generate"
   },
   "dependencies": {
-    "@strapi/plugin-documentation": "4.0.3",
-    "@strapi/plugin-i18n": "4.0.3",
-    "@strapi/plugin-users-permissions": "4.0.3",
-    "@strapi/strapi": "4.0.3",
-    "mysql": "2.18.1",
-    "reactour": "^1.18.6"
+    "@strapi/plugin-documentation": "4.0.4",
+    "@strapi/plugin-graphql": "4.0.4",
+    "@strapi/plugin-i18n": "4.0.4",
+    "@strapi/plugin-users-permissions": "4.0.4",
+    "@strapi/strapi": "4.0.4",
+    "mysql": "2.18.1"
   },
   "author": {
     "name": "A Strapi developer"
