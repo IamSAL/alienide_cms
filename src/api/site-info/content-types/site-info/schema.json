@@ -37,20 +37,11 @@
       "component": "elements.contact-info",
       "required": true
     },
-    "main_menu": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::menu.menu"
-    },
-    "footer_menu_left": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::menu.menu"
-    },
-    "footer_menu_right": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::menu.menu"
+    "menus": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.menus",
+      "required": true
     }
   }
 }
