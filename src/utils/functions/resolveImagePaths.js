@@ -1,7 +1,8 @@
 const _ = require("lodash");
-const resolveImagePaths = (path, entity) => {
+const resolveImagePaths = (entity, urlPath) => {
+  const path = urlPath || strapi.config.get("server.url");
   function resolver(entity) {
-    const sanitizedValue = entity.url ? prefixURL(path, entity) : entity;
+    const sanitizedValue = entity.url ? prefixURL(entity, path) : entity;
 
     _.forEach(sanitizedValue, (value, key) => {
       if (_.isArray(value)) {
@@ -16,14 +17,14 @@ const resolveImagePaths = (path, entity) => {
   return resolver(entity);
 };
 
-function prefixURL(path, entity) {
+function prefixURL(entity, path) {
   if (!entity.url.includes(path)) {
     entity.url = path + entity.url;
   }
   return entity;
 }
 
-function prefixAbsoluteURL(path, relativeURL) {
+function prefixAbsoluteURL(relativeURL, path) {
   if (!relativeURL.includes(path)) {
     relativeURL = path + relativeURL;
   }

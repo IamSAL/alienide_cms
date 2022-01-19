@@ -791,6 +791,9 @@
                               "status": {
                                 "type": "boolean"
                               },
+                              "order": {
+                                "type": "integer"
+                              },
                               "createdAt": {
                                 "type": "string",
                                 "format": "date-time"
@@ -2142,6 +2145,9 @@
                             "status": {
                               "type": "boolean"
                             },
+                            "order": {
+                              "type": "integer"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -2618,6 +2624,9 @@
                       },
                       "status": {
                         "type": "boolean"
+                      },
+                      "order": {
+                        "type": "integer"
                       }
                     }
                   }
@@ -3416,6 +3425,9 @@
                             },
                             "status": {
                               "type": "boolean"
+                            },
+                            "order": {
+                              "type": "integer"
                             },
                             "createdAt": {
                               "type": "string",
@@ -4677,6 +4689,9 @@
                             "status": {
                               "type": "boolean"
                             },
+                            "order": {
+                              "type": "integer"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -5206,6 +5221,9 @@
                       },
                       "status": {
                         "type": "boolean"
+                      },
+                      "order": {
+                        "type": "integer"
                       },
                       "createdAt": {
                         "type": "string",

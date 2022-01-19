@@ -398,15 +398,14 @@
                               "featured": {
                                 "type": "boolean"
                               },
+                              "order": {
+                                "type": "integer"
+                              },
                               "createdAt": {
                                 "type": "string",
                                 "format": "date-time"
                               },
                               "updatedAt": {
-                                "type": "string",
-                                "format": "date-time"
-                              },
-                              "publishedAt": {
                                 "type": "string",
                                 "format": "date-time"
                               },
@@ -1356,15 +1355,14 @@
                             "featured": {
                               "type": "boolean"
                             },
+                            "order": {
+                              "type": "integer"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
                             },
                             "updatedAt": {
-                              "type": "string",
-                              "format": "date-time"
-                            },
-                            "publishedAt": {
                               "type": "string",
                               "format": "date-time"
                             },
@@ -1837,6 +1835,9 @@
                           }
                         ],
                         "example": "string or id"
+                      },
+                      "order": {
+                        "type": "integer"
                       }
                     }
                   }
@@ -2243,15 +2244,14 @@
                             "featured": {
                               "type": "boolean"
                             },
+                            "order": {
+                              "type": "integer"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
                             },
                             "updatedAt": {
-                              "type": "string",
-                              "format": "date-time"
-                            },
-                            "publishedAt": {
                               "type": "string",
                               "format": "date-time"
                             },
@@ -3110,15 +3110,14 @@
                             "featured": {
                               "type": "boolean"
                             },
+                            "order": {
+                              "type": "integer"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
                             },
                             "updatedAt": {
-                              "type": "string",
-                              "format": "date-time"
-                            },
-                            "publishedAt": {
                               "type": "string",
                               "format": "date-time"
                             },
@@ -3609,15 +3608,14 @@
                       "featured": {
                         "type": "boolean"
                       },
+                      "order": {
+                        "type": "integer"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
                       },
                       "updatedAt": {
-                        "type": "string",
-                        "format": "date-time"
-                      },
-                      "publishedAt": {
                         "type": "string",
                         "format": "date-time"
                       },

@@ -46,8 +46,9 @@
     },
     "categories": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blog-category.blog-category"
+      "relation": "manyToMany",
+      "target": "api::blog-category.blog-category",
+      "inversedBy": "articles"
     },
     "featured": {
       "type": "boolean",

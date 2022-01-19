@@ -4,10 +4,11 @@
   "info": {
     "singularName": "portfolio-category",
     "pluralName": "portfolio-categories",
-    "displayName": "Portfolio categories"
+    "displayName": "Portfolio categories",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -26,7 +27,8 @@
     },
     "status": {
       "type": "boolean",
-      "required": true
+      "required": true,
+      "default": true
     }
   }
 }

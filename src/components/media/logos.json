@@ -2,39 +2,42 @@
   "collectionName": "components_media_logos",
   "info": {
     "displayName": "logos",
-    "icon": "asterisk"
+    "icon": "asterisk",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "normal": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "light": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "dark": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
-    },
-    "loader": {
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
+      ]
+    },
+    "dark": {
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "loader": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

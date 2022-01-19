@@ -38,19 +38,9 @@
       "required": true,
       "minLength": 50
     },
-    "gallery": {
-      "type": "component",
-      "repeatable": false,
-      "component": "media.gallery"
-    },
     "featured": {
       "type": "boolean",
       "default": false,
-      "required": true
-    },
-    "status": {
-      "type": "boolean",
-      "default": true,
       "required": true
     }
   }

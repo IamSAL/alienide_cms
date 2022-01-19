@@ -4,7 +4,8 @@
   "info": {
     "singularName": "team-member",
     "pluralName": "team-members",
-    "displayName": "Team members"
+    "displayName": "Team members",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,11 +21,12 @@
       "required": true
     },
     "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "bio": {
       "type": "text"
@@ -38,6 +40,13 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "default": 0,
+      "min": 0
     }
   }
 }

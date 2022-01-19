@@ -1,19 +1,22 @@
 "use strict";
+var fs = require("fs");
+var path = require("path");
+const mime = require("mime-types");
 const {
   siteInfoResource,
 } = require("./../../../utils/resources/site-info.resource");
 const {
   removeAuthorFields,
 } = require("./../../../utils/functions/removeAuthorFields");
+const {
+  resolveImagePaths,
+  prefixAbsoluteURL,
+} = require("../../../utils/functions/resolveImagePaths");
 /**
  *  site-info controller
  */
 
 const { createCoreController } = require("@strapi/strapi").factories;
-const {
-  resolveImagePaths,
-  prefixAbsoluteURL,
-} = require("../../../utils/functions/resolveImagePaths");
 
 module.exports = createCoreController(
   "api::site-info.site-info",
@@ -27,11 +30,7 @@ module.exports = createCoreController(
         }
       );
 
-      const server_root = ctx.request.secure
-        ? "https://" + ctx.request.host
-        : "http://" + ctx.request.host;
-
-      return removeAuthorFields(resolveImagePaths(server_root, siteInfo));
+      return removeAuthorFields(resolveImagePaths(siteInfo));
     },
 
     async getLoaderImg(ctx) {
@@ -43,11 +42,11 @@ module.exports = createCoreController(
         }
       );
 
-      const server_root = ctx.request.secure
-        ? "https://" + ctx.request.host
-        : "http://" + ctx.request.host;
-
-      return prefixAbsoluteURL(server_root, res.site_logo?.loader?.url || "");
+      const imgpath =
+        strapi.dirs.public + res.site_logo?.loader?.url.replaceAll("/", `\\`);
+      ctx.response.set("content-type", mime.lookup(path.basename(imgpath)));
+      const src = fs.createReadStream(imgpath);
+      ctx.body = src;
     },
   })
 );

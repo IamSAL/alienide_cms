@@ -34,6 +34,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::blog-category.blog-category"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "categories"
     }
   }
 }
