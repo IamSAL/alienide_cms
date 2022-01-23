@@ -3,7 +3,7 @@
 /**
  *  blog-category controller
  */
-
+const { imageResource } = require("../../../utils/resources/image.resource");
 const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController(
@@ -18,6 +18,7 @@ module.exports = createCoreController(
               articles: {
                 fields: ["slug"],
               },
+              image: imageResource,
             },
       };
       const categories = await super.find(ctx);
