@@ -42,8 +42,7 @@ module.exports = createCoreController(
         }
       );
 
-      const imgpath =
-        strapi.dirs.public + res.site_logo?.loader?.url.replaceAll("/", `\\`);
+      const imgpath = strapi.dirs.public + res.site_logo?.loader?.url;
       ctx.response.set("content-type", mime.lookup(path.basename(imgpath)));
       const src = fs.createReadStream(imgpath);
       ctx.body = src;
