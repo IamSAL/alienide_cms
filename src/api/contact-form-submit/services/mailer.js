@@ -7,7 +7,10 @@ const { createCoreService } = require("@strapi/strapi").factories;
 const userEmail = process.env.MYEMAIL;
 const userPass = process.env.MYPASS;
 const smtp = nodemailer.createTransport({
-  service: "Gmail",
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true, // use SSL,
+  // service: "Gmail",
   auth: {
     user: userEmail,
     pass: userPass,
