@@ -17,7 +17,11 @@
     "@strapi/plugin-i18n": "4.0.4",
     "@strapi/plugin-users-permissions": "4.0.4",
     "@strapi/strapi": "4.0.4",
-    "mysql": "2.18.1"
+    "ejs": "^3.1.6",
+    "html-to-text": "^8.1.0",
+    "juice": "^8.0.0",
+    "mysql": "2.18.1",
+    "nodemailer": "^6.7.2"
   },
   "author": {
     "name": "A Strapi developer"
